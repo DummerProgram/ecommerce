@@ -1,18 +1,15 @@
 <template>
     <!-- begin::Main Content -->
-    <LYContent/>
+    <main>
+        <RouterView/>
+    </main>
     <!-- end::Main Content -->
 </template>
 
 <script lang="ts">
     import { defineComponent } from "vue";
 
-    import LYContent from "@/layouts/main-layout/content/LYContent.vue";
-    
     export default defineComponent({
-        name: "main-layout",
-        components: {
-            LYContent,
-        },
+        name: "ly-content",
     });
 </script>
